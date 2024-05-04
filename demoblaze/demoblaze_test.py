@@ -43,13 +43,13 @@ class TestDefaultSuite():
     self.driver.find_element(By.LINK_TEXT, "Phones").click()
     self.driver.find_element(By.ID, "itemc").click()
   
-  def test_checkcartanddelete(self):
+  def test_check_cart_and_delete(self):
     self.driver.get("https://www.demoblaze.com/")
     self.driver.set_window_size(1536, 824)
     self.driver.find_element(By.ID, "cartur").click()
     self.driver.find_element(By.LINK_TEXT, "Delete").click()
   
-  def test_otherpages(self):
+  def test_other_pages(self):
     self.driver.get("https://www.demoblaze.com/")
     self.driver.set_window_size(1536, 824)
     self.driver.find_element(By.ID, "cartur").click()
@@ -68,7 +68,7 @@ class TestDefaultSuite():
     self.driver.find_element(By.ID, "message-text").click()
     self.driver.find_element(By.ID, "message-text").send_keys("aaaaa")
   
-  def test_placeorder(self):
+  def test_place_order(self):
     self.driver.get("https://www.demoblaze.com/")
     self.driver.set_window_size(1536, 824)
     self.driver.find_element(By.ID, "cartur").click()
@@ -88,7 +88,7 @@ class TestDefaultSuite():
     self.driver.find_element(By.CSS_SELECTOR, ".confirm").click()
     self.driver.find_element(By.ID, "cartur").click()
   
-  def test_usevariables(self):
+  def test_variables(self):
     self.vars["amine"] = "username"
     self.vars["azerty123"] = "password"
     self.driver.get("https://www.demoblaze.com/")
